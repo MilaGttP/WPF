@@ -7,6 +7,71 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center">
+            <WrapPanel Orientation="Horizontal" ItemHeight="60" ItemWidth="60" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="FontSize" Value="12" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button Foreground="Teal" Content="Teal"/>
+               <Button Foreground="Bisque" Content="Bisque"/>
+               <Button Foreground="Black" Content="Black"/>
+               <Button Foreground="Fuchsia" Content="Fuchsia"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" ItemHeight="50" ItemWidth="50" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="FontSize" Value="7" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button Foreground="Maroon" Content="Maroon"/>
+                <Button Foreground="Gray" Content="Gray"/>
+                <Button Foreground="Olive" Content="Olive"/>
+                <Button Foreground="Blue" Content="Blue"/>
+            </WrapPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <WrapPanel Orientation="Horizontal" ItemHeight="50" ItemWidth="50" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="FontSize" Value="7" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button Foreground="Green" Content="Green"/>
+                <Button Foreground="Navy" Content="Navy"/>
+                <Button Foreground="Blue" Content="Blue"/>
+                <Button Foreground="Aqua" Content="Aqua"/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" ItemHeight="60" ItemWidth="60" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="Padding" Value="12" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button Foreground="Lime" Content="Lime"/>
+                <Button Foreground="Red" Content="Red"/>
+                <Button Foreground="Gray" Content="Gray"/>
+                <Button Foreground="Aqua" Content="Aqua"/>
+            </WrapPanel>
+        </StackPanel>
     </Grid>
 </Window>
