@@ -7,4 +7,13 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="assets\ClBtn.png" />
+    <None Remove="assets\CloseBtnIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\CloseBtnIcon.png" />
+  </ItemGroup>
+
 </Project>

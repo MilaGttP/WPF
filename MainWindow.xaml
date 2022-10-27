@@ -5,8 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Calculator" Height="540" Width="335" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <SolidColorBrush Opacity=".90" Color="LightGray"/>
+    </Window.Background>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="20"/>
+    </WindowChrome.WindowChrome>
+     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.15*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" VerticalAlignment="Top" Background="Transparent">
+            <StackPanel Height="30" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Name="CloseButton" FontSize="16" FontWeight="Bold" Width="30" Background="Transparent" BorderThickness="0">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="assets\CloseBtnIcon.png" Height="12"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="3">
+            <WrapPanel Margin="0 12 0 0" Orientation="Horizontal" ItemHeight="75" ItemWidth="75" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="FontSize" Value="12" />
+                        <Setter Property="Background" Value="LightGray" />
+                        <Setter Property="Opacity" Value="0.90" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+                <Button/>
+            </WrapPanel>
+            <WrapPanel Orientation="Horizontal" ItemHeight="75" ItemWidth="75" HorizontalAlignment="Center">
+                <WrapPanel.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Margin" Value="5" />
+                        <Setter Property="FontSize" Value="12" />
+                        <Setter Property="Background" Value="LightGray" />
+                        <Setter Property="Opacity" Value="0.90" />
+                    </Style>
+                </WrapPanel.Resources>
+                <Button/>
+                <Button/>
+                <Button/>
+            </WrapPanel>
+        </StackPanel>
+        <TextBox Grid.Row="1" x:Name="Output" Margin="3" IsReadOnly="True" Opacity="0.90" Background="Transparent"/>
+        <TextBox Grid.Row="2" x:Name="Result" Margin="3" IsReadOnly="True" FontSize="20" FontWeight="Bold" Opacity="0.90" Background="Transparent"/>
     </Grid>
 </Window>

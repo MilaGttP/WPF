@@ -23,6 +23,7 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+            CloseButton.Click += (s, e) => Close();
         }
     }
 }
