@@ -70,7 +70,7 @@
                         <Setter Property="BorderBrush" Value="LightGray" />
                     </Style>
                 </WrapPanel.Resources>
-                <Button x:Name="DotBtn" Width="70" Content="."/>
+                <Button x:Name="DotBtn" Width="70" Content=","/>
                 <Button x:Name="ZeroBtn" Width="70" Content="0"/>
                 <Button x:Name="EqualsBtn" Width="146" Content="=" Foreground="Gray"/>
             </WrapPanel>
