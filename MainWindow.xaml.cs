@@ -13,6 +13,7 @@ namespace WPF
         {
             InitializeComponent();
             CloseButton.Click += (s, e) => Close();
+            MinimizeButton.Click += (s, e) => WindowState = WindowState.Minimized;
 
             CEBtn.Click += ClearButton_Click;
             CBtn.Click += ClearButton_Click;

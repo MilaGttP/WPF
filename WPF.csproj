@@ -10,6 +10,12 @@
   <ItemGroup>
     <None Remove="assets\ClBtn.png" />
     <None Remove="assets\CloseBtnIcon.png" />
+    <None Remove="assets\MinBtnIcon.jfif" />
+    <None Remove="assets\MinBtnIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\MinBtnIcon.png" />
   </ItemGroup>
 
   <ItemGroup>

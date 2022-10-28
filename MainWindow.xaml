@@ -22,7 +22,14 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" VerticalAlignment="Top" Background="Transparent">
             <StackPanel Height="30" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
-                <TextBlock Text="Calculator" Margin="0 8 230 0" FontSize="14"/>
+                <TextBlock Text="Calculator" Margin="0 8 205 0" FontSize="14"/>
+                <Button Name="MinimizeButton" FontSize="16" FontWeight="Bold" Width="30" Background="Transparent" BorderThickness="0">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="assets\MinBtnIcon.png" Height="16"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
                 <Button Name="CloseButton" FontSize="16" FontWeight="Bold" Width="30" Background="Transparent" BorderThickness="0">
                     <Button.Content>
                         <StackPanel Orientation="Horizontal">
