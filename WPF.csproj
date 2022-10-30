@@ -7,4 +7,21 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="assets\BottomPanel.png" />
+    <None Remove="assets\Bottom\BottomPanel.png" />
+    <None Remove="assets\LeftBar\Icons\Home.png" />
+    <None Remove="assets\LeftBar\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Bottom\BottomPanel.png" />
+    <Resource Include="assets\LeftBar\Icons\Home.png" />
+    <Resource Include="assets\LeftBar\Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+  </ItemGroup>
+
 </Project>

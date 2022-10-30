@@ -3,10 +3,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"         
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MusicApp" Height="1024" Width="1440" Background="#121212" WindowStartupLocation="CenterScreen">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.35*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.36*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.12*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" Background="#212121">
+            
+        </Border>
+        <Border Grid.Column="1">
+            
+        </Border>
+        <Border Grid.Column="2" Background="#212121">
+            
+        </Border>
+        <Border Grid.ColumnSpan="3" Grid.Row="1">
+            <Grid Background="Transparent">
+                <Image Stretch="Fill" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Source="assets\Bottom\BottomPanel.png" Width="1441" Height="112"/>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
