@@ -10,7 +10,7 @@ https://www.figma.com/community/file/1116612769411056630
 
 #Бажане зображення
 
-![1](https://user-images.githubusercontent.com/101627933/199840476-5d2f74bb-dc10-4d6a-9c15-59db1a9e0184.JPG)
+![2](https://user-images.githubusercontent.com/101627933/199841756-b034ec12-cddf-484c-8dd1-f3b29d00c2f6.png)
 
 #Результат
 
