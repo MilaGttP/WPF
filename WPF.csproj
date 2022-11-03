@@ -14,16 +14,23 @@
     <None Remove="assets\LeftBar\Icons\Album.png" />
     <None Remove="assets\LeftBar\Icons\Albums.png" />
     <None Remove="assets\LeftBar\Icons\AlbumsTxt.png" />
+    <None Remove="assets\LeftBar\Icons\BestOfBonJovi.png" />
+    <None Remove="assets\LeftBar\Icons\BestOfJohnMayer.png" />
     <None Remove="assets\LeftBar\Icons\Discover.png" />
     <None Remove="assets\LeftBar\Icons\DiscoverTxt.png" />
     <None Remove="assets\LeftBar\Icons\Discovery.png" />
+    <None Remove="assets\LeftBar\Icons\FavoriteSongs.png" />
     <None Remove="assets\LeftBar\Icons\GreenRectangle.png" />
     <None Remove="assets\LeftBar\Icons\Home.png" />
     <None Remove="assets\LeftBar\Icons\Library.png" />
+    <None Remove="assets\LeftBar\Icons\LocalFiles.png" />
+    <None Remove="assets\LeftBar\Icons\LoFiMusic.png" />
+    <None Remove="assets\LeftBar\Icons\Playlist.png" />
     <None Remove="assets\LeftBar\Icons\Podcast.png" />
     <None Remove="assets\LeftBar\Icons\Podcasts.png" />
     <None Remove="assets\LeftBar\Icons\Radio.png" />
     <None Remove="assets\LeftBar\Icons\Radios.png" />
+    <None Remove="assets\LeftBar\Icons\RecentlyAdded.png" />
     <None Remove="assets\LeftBar\Logo.png" />
   </ItemGroup>
 
@@ -32,13 +39,20 @@
     <Resource Include="assets\LeftBar\GradientRectangle.png" />
     <Resource Include="assets\LeftBar\Icons\Album.png" />
     <Resource Include="assets\LeftBar\Icons\AlbumsTxt.png" />
+    <Resource Include="assets\LeftBar\Icons\BestOfBonJovi.png" />
+    <Resource Include="assets\LeftBar\Icons\BestOfJohnMayer.png" />
     <Resource Include="assets\LeftBar\Icons\DiscoverTxt.png" />
     <Resource Include="assets\LeftBar\Icons\Discovery.png" />
+    <Resource Include="assets\LeftBar\Icons\FavoriteSongs.png" />
     <Resource Include="assets\LeftBar\Icons\GreenRectangle.png" />
     <Resource Include="assets\LeftBar\Icons\Home.png" />
     <Resource Include="assets\LeftBar\Icons\Library.png" />
+    <Resource Include="assets\LeftBar\Icons\LocalFiles.png" />
+    <Resource Include="assets\LeftBar\Icons\LoFiMusic.png" />
+    <Resource Include="assets\LeftBar\Icons\Playlist.png" />
     <Resource Include="assets\LeftBar\Icons\Podcasts.png" />
     <Resource Include="assets\LeftBar\Icons\Radios.png" />
+    <Resource Include="assets\LeftBar\Icons\RecentlyAdded.png" />
     <Resource Include="assets\LeftBar\Logo.png" />
   </ItemGroup>
 
