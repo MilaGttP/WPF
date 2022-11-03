@@ -10,8 +10,12 @@
   <ItemGroup>
     <None Remove="assets\BottomPanel.png" />
     <None Remove="assets\Bottom\BottomPanel.png" />
+    <None Remove="assets\Center\HomePopularArtist.png" />
+    <None Remove="assets\Center\Magnify.png" />
     <None Remove="assets\Center\Popular.png" />
     <None Remove="assets\Center\PopularReleases.png" />
+    <None Remove="assets\Center\PopularTxt.png" />
+    <None Remove="assets\Center\SeeAllTxt.png" />
     <None Remove="assets\Center\Sheeran.png" />
     <None Remove="assets\Center\SheeranBackground.png" />
     <None Remove="assets\LeftBar\GradientRectangle.png" />
@@ -43,8 +47,12 @@
 
   <ItemGroup>
     <Resource Include="assets\Bottom\BottomPanel.png" />
+    <Resource Include="assets\Center\HomePopularArtist.png" />
+    <Resource Include="assets\Center\Magnify.png" />
     <Resource Include="assets\Center\Popular.png" />
     <Resource Include="assets\Center\PopularReleases.png" />
+    <Resource Include="assets\Center\PopularTxt.png" />
+    <Resource Include="assets\Center\SeeAllTxt.png" />
     <Resource Include="assets\Center\Sheeran.png" />
     <Resource Include="assets\Center\SheeranBackground.png" />
     <Resource Include="assets\LeftBar\GradientRectangle.png" />
