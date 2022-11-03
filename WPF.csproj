@@ -10,6 +10,10 @@
   <ItemGroup>
     <None Remove="assets\BottomPanel.png" />
     <None Remove="assets\Bottom\BottomPanel.png" />
+    <None Remove="assets\Center\Popular.png" />
+    <None Remove="assets\Center\PopularReleases.png" />
+    <None Remove="assets\Center\Sheeran.png" />
+    <None Remove="assets\Center\SheeranBackground.png" />
     <None Remove="assets\LeftBar\GradientRectangle.png" />
     <None Remove="assets\LeftBar\Icons\Album.png" />
     <None Remove="assets\LeftBar\Icons\Albums.png" />
@@ -32,10 +36,17 @@
     <None Remove="assets\LeftBar\Icons\Radios.png" />
     <None Remove="assets\LeftBar\Icons\RecentlyAdded.png" />
     <None Remove="assets\LeftBar\Logo.png" />
+    <None Remove="assets\RightBar\Account.png" />
+    <None Remove="assets\RightBar\AlsoLike.png" />
+    <None Remove="assets\RightBar\RecentPlayed.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="assets\Bottom\BottomPanel.png" />
+    <Resource Include="assets\Center\Popular.png" />
+    <Resource Include="assets\Center\PopularReleases.png" />
+    <Resource Include="assets\Center\Sheeran.png" />
+    <Resource Include="assets\Center\SheeranBackground.png" />
     <Resource Include="assets\LeftBar\GradientRectangle.png" />
     <Resource Include="assets\LeftBar\Icons\Album.png" />
     <Resource Include="assets\LeftBar\Icons\AlbumsTxt.png" />
@@ -54,6 +65,9 @@
     <Resource Include="assets\LeftBar\Icons\Radios.png" />
     <Resource Include="assets\LeftBar\Icons\RecentlyAdded.png" />
     <Resource Include="assets\LeftBar\Logo.png" />
+    <Resource Include="assets\RightBar\Account.png" />
+    <Resource Include="assets\RightBar\AlsoLike.png" />
+    <Resource Include="assets\RightBar\RecentPlayed.png" />
   </ItemGroup>
 
   <ItemGroup>
