@@ -24,12 +24,12 @@
         <Image Grid.RowSpan="4" Source="assets\MainPage\Background.png"/>
         <Grid Grid.Row="0" VerticalAlignment="Top" Background="Transparent">
             <StackPanel Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.7" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
                     <Button.Content>
                         <Image Source="assets\WindowStyle\MinBtnIcon.png" Height="18"/>
                     </Button.Content>
                 </Button>
-                <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.7" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" Cursor="Hand">
+                <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" Cursor="Hand">
                     <Button.Content>
                         <Image Source="assets\WindowStyle\CloseBtnIcon.png" Height="16"/>
                     </Button.Content>
