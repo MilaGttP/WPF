@@ -23,6 +23,8 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+            CloseButton.Click += (s, e) => Close();
+            MinimizeButton.Click += (s, e) => WindowState = WindowState.Minimized;
         }
     }
 }

@@ -13,6 +13,8 @@
     <None Remove="assets\MainPage\MainText.png" />
     <None Remove="assets\MainPage\Schedule.png" />
     <None Remove="assets\MainPage\WatchLogo.png" />
+    <None Remove="assets\WindowStyle\CloseBtnIcon.png" />
+    <None Remove="assets\WindowStyle\MinBtnIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,8 @@
     <Resource Include="assets\MainPage\MainText.png" />
     <Resource Include="assets\MainPage\Schedule.png" />
     <Resource Include="assets\MainPage\WatchLogo.png" />
+    <Resource Include="assets\WindowStyle\CloseBtnIcon.png" />
+    <Resource Include="assets\WindowStyle\MinBtnIcon.png" />
   </ItemGroup>
 
 </Project>

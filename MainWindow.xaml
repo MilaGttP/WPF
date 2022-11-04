@@ -6,16 +6,38 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="RestaurantApp" Width="1680" Height="1000" Background="Black" WindowStartupLocation="CenterScreen">
+        Title="RestaurantApp" Width="1680" Height="1000" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+    <Window.Background>
+        <SolidColorBrush Opacity=".95" Color="Black"/>
+    </Window.Background>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="20"/>
+    </WindowChrome.WindowChrome>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="160"/>
-            <RowDefinition Height="450"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="500"/>
             <RowDefinition Height="170"/>
-            <RowDefinition Height="130"/>
+            <RowDefinition Height="140"/>
         </Grid.RowDefinitions>
+
         <Image Grid.RowSpan="4" Source="assets\MainPage\Background.png"/>
-        <Border Grid.Row="0">
+        <Grid Grid.Row="0" VerticalAlignment="Top" Background="Transparent">
+            <StackPanel Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.7" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                    <Button.Content>
+                        <Image Source="assets\WindowStyle\MinBtnIcon.png" Height="18"/>
+                    </Button.Content>
+                </Button>
+                <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.7" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" Cursor="Hand">
+                    <Button.Content>
+                        <Image Source="assets\WindowStyle\CloseBtnIcon.png" Height="16"/>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </Grid>
+        
+        <Border Grid.Row="0" Width="150">
             <Image Source="assets\MainPage\Logo.png" Width="100" Height="30"/>
         </Border>
         <Border Grid.Row="1">
