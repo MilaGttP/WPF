@@ -7,4 +7,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="assets\MainPage\Background.png" />
+    <None Remove="assets\MainPage\Logo.png" />
+    <None Remove="assets\MainPage\MainText.png" />
+    <None Remove="assets\MainPage\Schedule.png" />
+    <None Remove="assets\MainPage\WatchLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\MainPage\Background.png" />
+    <Resource Include="assets\MainPage\Logo.png" />
+    <Resource Include="assets\MainPage\MainText.png" />
+    <Resource Include="assets\MainPage\Schedule.png" />
+    <Resource Include="assets\MainPage\WatchLogo.png" />
+  </ItemGroup>
+
 </Project>

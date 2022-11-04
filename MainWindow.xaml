@@ -3,10 +3,48 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="RestaurantApp" Width="1680" Height="1000" Background="Black" WindowStartupLocation="CenterScreen">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="450"/>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="130"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="4" Source="assets\MainPage\Background.png"/>
+        <Border Grid.Row="0">
+            <Image Source="assets\MainPage\Logo.png" Width="100" Height="30"/>
+        </Border>
+        <Border Grid.Row="1">
+            <Image Source="assets\MainPage\MainText.png" Width="685" Height="324" Margin="0 60 0 0"/>
+        </Border>
+        <Border Grid.Row="2">
+            <Image Source="assets\MainPage\Schedule.png" Width="250" Height="165" Margin="500 0 0 0"/>
+        </Border>
+        <Border Grid.Row="3">
+            <Border Background="White" Width="560" Height="70" CornerRadius="40">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="0.85*"/>
+                        <ColumnDefinition Width="0.65*"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="assets\MainPage\WatchLogo.png" HorizontalAlignment="Center" Width="50" Height="50"/>
+                    <Button Grid.Column="1" Width="80" Height="50" Content="Menu" FontFamily="Verdana" Background="#F8F8F8" 
+                            BorderThickness="0" materialDesign:ButtonAssist.CornerRadius="15" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button Grid.Column="2" Width="120" Height="50" Content="Restaurant" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" materialDesign:ButtonAssist.CornerRadius="15" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button Grid.Column="3" Width="90" Height="50" Content="Classes" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" materialDesign:ButtonAssist.CornerRadius="15" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button Grid.Column="4" Width="160" Height="50" Content="BOOK A TABLE" FontFamily="Verdana" Background="Black" 
+                            Foreground="White" BorderThickness="0" materialDesign:ButtonAssist.CornerRadius="15" FontSize="16" Margin="0 0 10 0"/>
+                </Grid>
+            </Border>
+        </Border>
     </Grid>
 </Window>
