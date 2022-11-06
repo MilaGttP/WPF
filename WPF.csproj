@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\Classes\First.png" />
+    <None Remove="assets\Classes\Fiveth.png" />
+    <None Remove="assets\Classes\Fourth.png" />
+    <None Remove="assets\Classes\Second.png" />
+    <None Remove="assets\Classes\Third.png" />
     <None Remove="assets\Logo.png" />
     <None Remove="assets\MainLogo.png" />
     <None Remove="assets\MainPage\Background.png" />
@@ -20,6 +25,21 @@
     <None Remove="assets\MainPage\Schedules.png" />
     <None Remove="assets\MainPage\Watch.png" />
     <None Remove="assets\MainPage\WatchLogo.png" />
+    <None Remove="assets\Menu\Background.png" />
+    <None Remove="assets\Menu\Breakfast.png" />
+    <None Remove="assets\Menu\Dinner.png" />
+    <None Remove="assets\Menu\Drinks.png" />
+    <None Remove="assets\Menu\Footer.png" />
+    <None Remove="assets\Menu\MenuText.png" />
+    <None Remove="assets\Menu\Starters.png" />
+    <None Remove="assets\Menu\TopPanel.png" />
+    <None Remove="assets\Reservation\Background.png" />
+    <None Remove="assets\Reservation\Booking.png" />
+    <None Remove="assets\Reservation\BookingTable.png" />
+    <None Remove="assets\Reservation\GetInTouchForm.png" />
+    <None Remove="assets\Reservation\GetInTouchTxt.png" />
+    <None Remove="assets\Reservation\ReservationText.png" />
+    <None Remove="assets\Reservation\TopText.png" />
     <None Remove="assets\Restaurant\DiscoverNique.png" />
     <None Remove="assets\Restaurant\FirstPart.png" />
     <None Remove="assets\Restaurant\Fiveth.png" />
@@ -30,8 +50,25 @@
     <None Remove="assets\Restaurant\Third.png" />
     <None Remove="assets\WindowStyle\CloseBtnIcon.png" />
     <None Remove="assets\WindowStyle\closeButtonIcon.png" />
+    <None Remove="assets\WindowStyle\maxBtnIcon.png" />
     <None Remove="assets\WindowStyle\MinBtnIcon.png" />
     <None Remove="assets\WindowStyle\minButtonIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Pager.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Reservation\GetInTouchForm.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Menu\Dinner.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Menu\Breakfast.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,11 +76,27 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="assets\Classes\First.png" />
+    <Resource Include="assets\Classes\Fiveth.png" />
+    <Resource Include="assets\Classes\Fourth.png" />
+    <Resource Include="assets\Classes\Second.png" />
+    <Resource Include="assets\Classes\Third.png" />
     <Resource Include="assets\Logo.png" />
     <Resource Include="assets\MainPage\BackImg.png" />
     <Resource Include="assets\MainPage\MainTxt.png" />
     <Resource Include="assets\MainPage\Schedules.png" />
     <Resource Include="assets\MainPage\Watch.png" />
+    <Resource Include="assets\Menu\Background.png" />
+    <Resource Include="assets\Menu\Drinks.png" />
+    <Resource Include="assets\Menu\Footer.png" />
+    <Resource Include="assets\Menu\MenuText.png" />
+    <Resource Include="assets\Menu\Starters.png" />
+    <Resource Include="assets\Menu\TopPanel.png" />
+    <Resource Include="assets\Reservation\Background.png" />
+    <Resource Include="assets\Reservation\BookingTable.png" />
+    <Resource Include="assets\Reservation\GetInTouchTxt.png" />
+    <Resource Include="assets\Reservation\ReservationText.png" />
+    <Resource Include="assets\Reservation\TopText.png" />
     <Resource Include="assets\Restaurant\DiscoverNique.png" />
     <Resource Include="assets\Restaurant\FirstPart.png" />
     <Resource Include="assets\Restaurant\Fiveth.png" />
@@ -53,6 +106,7 @@
     <Resource Include="assets\Restaurant\Sixth.png" />
     <Resource Include="assets\Restaurant\Third.png" />
     <Resource Include="assets\WindowStyle\closeButtonIcon.png" />
+    <Resource Include="assets\WindowStyle\maxBtnIcon.png" />
     <Resource Include="assets\WindowStyle\minButtonIcon.png" />
   </ItemGroup>
 

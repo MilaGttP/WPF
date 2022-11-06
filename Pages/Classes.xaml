@@ -3,10 +3,90 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WPF"
              mc:Ignorable="d" 
              d:DesignHeight="1000" d:DesignWidth="1680" Background="Black">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="140"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Name="scrollviewer2" Grid.RowSpan="3" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" CanContentScroll="True">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Height" Value="1010"/>
+                        <Setter Property="Width" Value="560"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Image Source="/assets/Classes/First.png"/>
+                <Image Source="/assets/Classes/Second.png"/>
+                <Image Source="/assets/Classes/Third.png"/>
+                <Image Source="/assets/Classes/Fourth.png"/>
+                <Image Source="/assets/Classes/Fiveth.png"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button Grid.Row="1" Content=">" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Right" Style="{DynamicResource MaterialDesignFlatButton}" Margin="0 0 10 0" Click="Right_Click"/>
+
+        <Button x:Name="Left" Grid.Row="1" Content="&lt;" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Left" Style="{DynamicResource MaterialDesignFlatButton}" Margin="10 0 10 0" Click="Left_Click" Visibility="Hidden"/>
+
+        <StackPanel Margin="0 0 0 50" Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\minButtonIcon.png" Height="18"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="MaximizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" >
+                <Button.Content>
+                    <Image Source="/assets/WindowStyle/maxBtnIcon.png" Width="20" Height="20"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\closeButtonIcon.png" Height="16"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        <Image Grid.Row="0" Source="/assets/Logo.png" Width="100" Height="30"/>
+        <Border Grid.Row="2">
+            <Border Background="White" Width="560" Height="70" CornerRadius="40">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="0.85*"/>
+                        <ColumnDefinition Width="0.65*"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/assets/MainPage/Watch.png" HorizontalAlignment="Center" Width="50" Height="50"/>
+                    <Button x:Name="menu" Grid.Column="1" Width="80" Height="50" Content="Menu" FontFamily="Verdana" Background="#F8F8F8" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="restaurant" Grid.Column="2" Width="120" Height="50" Content="Restaurant" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="classes" Grid.Column="3" Width="90" Height="50" Content="Classes" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="booking" Grid.Column="4" Width="160" Height="50" Content="BOOK A TABLE" FontFamily="Verdana" Background="Black" 
+                            Foreground="White" BorderThickness="0" FontSize="16" Margin="0 0 10 0">
+                        <Button.Resources>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="15" Background="Black" BorderThickness="0">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{TemplateBinding Padding}" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Border>
+        </Border>
     </Grid>
 </UserControl>

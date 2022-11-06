@@ -3,8 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="RestaurantApp" Width="1680" Height="1000" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+        
+        Title="RestaurantApp" Width="1680" Height="1000" WindowStartupLocation="CenterScreen" WindowStyle="None">
 </Window>

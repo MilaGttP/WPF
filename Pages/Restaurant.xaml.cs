@@ -9,12 +9,20 @@ namespace WPF
     /// </summary>
     public partial class Restaurant : UserControl
     {
-        public Restaurant() => InitializeComponent();
-        private void MenuButton_Click(object sender, RoutedEventArgs e) => Switcher.Switch(new Menu());
-        private void RestaurantButton_Click(object sender, RoutedEventArgs e) => Switcher.Switch(new Restaurant());
-        private void ClassesButton_Click(object sender, RoutedEventArgs e) => Switcher.Switch(new Classes());
-        private void BookButton_Click(object sender, RoutedEventArgs e) => Switcher.Switch(new Reservation());
+        public Restaurant()
+        {
+            InitializeComponent();
+            Style style = new Style(this);
+            CloseButton.Click += style.Close_Click;
+            MinimizeButton.Click += style.Minimize_Click;
+            MaximizeButton.Click += style.Maximize_Click;
 
+            BorderNavigator borderNavigator = new BorderNavigator();
+            menu.Click += borderNavigator.MenuButton_Click;
+            restaurant.Click += borderNavigator.RestaurantButton_Click;
+            classes.Click += borderNavigator.ClassesButton_Click;
+            booking.Click += borderNavigator.BookButton_Click;
+        }
         private void Right_Click(object sender, RoutedEventArgs e)
         {
             scrollviewer1.LineRight();

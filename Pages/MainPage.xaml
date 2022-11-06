@@ -14,7 +14,26 @@
             <RowDefinition Height="170"/>
             <RowDefinition Height="140"/>
         </Grid.RowDefinitions>
+        
         <Image Grid.RowSpan="4" Source="\WPF;component\assets\MainPage\BackImg.png"/>
+
+        <StackPanel Margin="0 0 0 70" Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\minButtonIcon.png" Height="18"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="MaximizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" >
+                <Button.Content>
+                    <Image Source="/assets/WindowStyle/maxBtnIcon.png" Width="20" Height="20"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\closeButtonIcon.png" Height="16"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
 
         <Border Grid.Row="0" Width="150">
             <Image Source="/assets/Logo.png" Width="100" Height="30"/>
@@ -35,7 +54,7 @@
                         <ColumnDefinition Width="0.65*"/>
                         <ColumnDefinition Width="180"/>
                     </Grid.ColumnDefinitions>
-                    <Image Grid.Column="0" Source="assets\MainPage\WatchLogo.png" HorizontalAlignment="Center" Width="50" Height="50"/>
+                    <Image Grid.Column="0" Source="/assets/MainPage/Watch.png" HorizontalAlignment="Right" Width="50" Height="50"/>
                     <Button Grid.Column="1" Width="80" Height="50" Content="Menu" FontFamily="Verdana" Background="#F8F8F8" 
                             BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}" Click="MenuButton_Click"/>
                     <Button Grid.Column="2" Width="120" Height="50" Content="Restaurant" FontFamily="Verdana" Background="#FFFFFF" 
