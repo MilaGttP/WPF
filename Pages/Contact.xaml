@@ -7,6 +7,98 @@
              mc:Ignorable="d" 
             d:DesignHeight="1000" d:DesignWidth="1680" Background="Black">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="140"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="840"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.Column="0" Grid.RowSpan="3" Source="/assets/Reservation/Background.png"/>
+
+        <StackPanel Grid.ColumnSpan="2" Margin="0 0 0 50" Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="MinimizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\minButtonIcon.png" Height="18"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="MaximizeButton" Margin="0 0 10 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0" >
+                <Button.Content>
+                    <Image Source="/assets/WindowStyle/maxBtnIcon.png" Width="20" Height="20"/>
+                </Button.Content>
+            </Button>
+            <Button x:Name="CloseButton" Margin="0 0 15 0" FontSize="16" Opacity="0.6" FontWeight="Bold" Width="50" Height="50" Background="#212121" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="\WPF;component\assets\WindowStyle\closeButtonIcon.png" Height="16"/>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+
+        <Image Source="/assets/Logo.png" Width="100" Height="30"/>
+        <Image Grid.Row="1" Source="/assets/Reservation/GetInTouchTxt.png" Width="470" Height="150"/>
+        <Border Grid.Row="3">
+            <Border Background="White" Width="560" Height="70" CornerRadius="40">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="0.85*"/>
+                        <ColumnDefinition Width="0.65*"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/assets/MainPage/Watch.png" HorizontalAlignment="Right" Width="50" Height="50"/>
+                    <Button x:Name="menu" Grid.Column="1" Width="80" Height="50" Content="Menu" FontFamily="Verdana" Background="#F8F8F8" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="restaurant" Grid.Column="2" Width="120" Height="50" Content="Restaurant" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="classes" Grid.Column="3" Width="90" Height="50" Content="Classes" FontFamily="Verdana" Background="#FFFFFF" 
+                            BorderThickness="0" FontSize="15" Style="{StaticResource MaterialDesignFlatButton}"/>
+                    <Button x:Name="booking" Grid.Column="4" Width="160" Height="50" Content="BOOK A TABLE" FontFamily="Verdana" Background="Black" 
+                            Foreground="White" BorderThickness="0" FontSize="16" Margin="0 0 10 0">
+                        <Button.Resources>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border CornerRadius="15" Background="Black" BorderThickness="0">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{TemplateBinding Padding}" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Border>
+        </Border>
+
+        <Image Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top" Source="/assets/Reservation/TopText.png" Width="680" Height="100" Margin="0 120 0 0"/>
+
+        <Border Grid.Column="1" Grid.RowSpan="3" VerticalAlignment="Bottom" Margin="0 0 0 80">
+            <Grid>
+                <Image Source="/assets/Reservation/GetInTouchForm.png" Width="680" Height="650"/>
+                <Button Grid.Column="1" Width="680" Height="60" Content="BOOK A TABLE" FontFamily="Verdana" Background="Wheat" 
+                            Foreground="Black" BorderThickness="0" FontSize="18" VerticalAlignment="Bottom" Click="MainPage_Click">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="16" Background="Wheat" BorderThickness="0">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="{TemplateBinding Padding}" />
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Border>
+
     </Grid>
 </UserControl>

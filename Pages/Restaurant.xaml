@@ -48,10 +48,10 @@
             </Button>
         </StackPanel>
 
-        <Button Grid.Row="1" Content=">" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+        <Button Grid.Row="1" Content="→" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
                 HorizontalAlignment="Right" Style="{DynamicResource MaterialDesignFlatButton}" Margin="0 0 10 0" Click="Right_Click"/>
 
-        <Button x:Name="Left" Grid.Row="1" Content="&lt;" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+        <Button x:Name="Left" Grid.Row="1" Content="←" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
                 HorizontalAlignment="Left" Style="{DynamicResource MaterialDesignFlatButton}" Margin="10 0 10 0" Click="Left_Click" Visibility="Hidden"/>
 
         <Image Grid.Row="0" Source="/assets/Logo.png" Width="100" Height="30"/>

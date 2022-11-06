@@ -28,10 +28,10 @@
             </StackPanel>
         </ScrollViewer>
 
-        <Button Grid.Row="1" Content=">" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
-                HorizontalAlignment="Right" Style="{DynamicResource MaterialDesignFlatButton}" Margin="0 0 10 0" Click="Right_Click"/>
+        <Button Grid.Row="1" Content="→" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+                HorizontalAlignment="Right" Style="{DynamicResource MaterialDesignFlatButton}" Margin="0 0 10 0" Click="Right_Click" Cursor="Hand"/>
 
-        <Button x:Name="Left" Grid.Row="1" Content="&lt;" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
+        <Button x:Name="Left" Grid.Row="1" Content="←" Foreground="Azure" Background="#212121" Opacity="0.7" Width="50" Height="50" VerticalAlignment="Top" 
                 HorizontalAlignment="Left" Style="{DynamicResource MaterialDesignFlatButton}" Margin="10 0 10 0" Click="Left_Click" Visibility="Hidden"/>
 
         <StackPanel Margin="0 0 0 50" Height="100" WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">

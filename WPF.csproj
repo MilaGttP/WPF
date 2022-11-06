@@ -32,7 +32,7 @@
     <None Remove="assets\Menu\Footer.png" />
     <None Remove="assets\Menu\MenuText.png" />
     <None Remove="assets\Menu\Starters.png" />
-    <None Remove="assets\Menu\TopPanel.png" />
+    <None Remove="assets\Menu\Top.png" />
     <None Remove="assets\Reservation\Background.png" />
     <None Remove="assets\Reservation\Booking.png" />
     <None Remove="assets\Reservation\BookingTable.png" />
@@ -60,6 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="assets\Menu\Top.png" />
     <Resource Include="assets\Reservation\GetInTouchForm.png" />
   </ItemGroup>
 
@@ -91,7 +92,6 @@
     <Resource Include="assets\Menu\Footer.png" />
     <Resource Include="assets\Menu\MenuText.png" />
     <Resource Include="assets\Menu\Starters.png" />
-    <Resource Include="assets\Menu\TopPanel.png" />
     <Resource Include="assets\Reservation\Background.png" />
     <Resource Include="assets\Reservation\BookingTable.png" />
     <Resource Include="assets\Reservation\GetInTouchTxt.png" />
